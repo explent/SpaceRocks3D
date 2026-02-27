@@ -42,6 +42,12 @@
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.h">
       <Filter>Source\SpaceRocks3D_EE</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\EEPlayerController.cpp">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEPlayerController.h">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClInclude>
     <None Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.Build.cs">
       <Filter>Source\SpaceRocks3D_EE</Filter>
     </None>
@@ -50,6 +56,21 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.h">
       <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceRocks3D_EE\HUD">
+      <UniqueIdentifier>{E4BA16CB-FF5A-3556-A751-54EE49087DAB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\HUD\EEHUD.cpp">
+      <Filter>Source\SpaceRocks3D_EE\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\HUD\EEHUD.h">
+      <Filter>Source\SpaceRocks3D_EE\HUD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\HUD\EEPlayerOverlay.cpp">
+      <Filter>Source\SpaceRocks3D_EE\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\HUD\EEPlayerOverlay.h">
+      <Filter>Source\SpaceRocks3D_EE\HUD</Filter>
     </ClInclude>
     <Filter Include="Source\SpaceRocks3D_EE\Projectiles">
       <UniqueIdentifier>{CBF37AD4-31BE-3D6F-9F80-13AC866D9A35}</UniqueIdentifier>

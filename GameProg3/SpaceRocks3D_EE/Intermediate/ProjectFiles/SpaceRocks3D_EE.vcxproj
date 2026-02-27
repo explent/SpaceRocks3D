@@ -265,11 +265,23 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.h"/>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\EEPlayerController.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEPlayerController.h"/>
     <None Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.Build.cs"/>
     <ClCompile Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.h"/>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\HUD\EEHUD.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\HUD\EEHUD.h"/>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\HUD\EEPlayerOverlay.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\HUD\EEPlayerOverlay.h"/>
     <ClCompile Include="..\..\Source\SpaceRocks3D_EE\Projectiles\EEProjectile.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

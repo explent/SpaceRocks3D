@@ -6,6 +6,9 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/Entit/OneDrive/Dokumente/SpaceRocks3D/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/BP_SR3DGameMode.uasset",
+				"C:/Users/Entit/OneDrive/Dokumente/SpaceRocks3D/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/BP_SR3DPlayerController.uasset",
+				"C:/Users/Entit/OneDrive/Dokumente/SpaceRocks3D/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/HUD/BP_SR3DHUD.uasset",
+				"C:/Users/Entit/OneDrive/Dokumente/SpaceRocks3D/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/HUD/WBP_PlayerOverlay.uasset",
 				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Maps/SpaceRocks3D_L1.umap",
 				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/BP_SpaceShip.uasset",
 				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Textures/spaceship_texture_0.uasset",
