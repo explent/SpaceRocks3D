@@ -36,6 +36,12 @@
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\AEESpaceShip.h">
       <Filter>Source\SpaceRocks3D_EE</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.cpp">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.h">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClInclude>
     <None Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.Build.cs">
       <Filter>Source\SpaceRocks3D_EE</Filter>
     </None>

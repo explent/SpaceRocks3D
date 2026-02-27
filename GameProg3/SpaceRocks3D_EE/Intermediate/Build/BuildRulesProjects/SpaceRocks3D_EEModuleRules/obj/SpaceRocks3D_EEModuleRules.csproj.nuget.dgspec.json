@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj": {}
+    "C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -1151,14 +1151,14 @@
         }
       }
     },
-    "C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj": {
+    "C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj",
         "projectName": "SpaceRocks3D_EEModuleRules",
-        "projectPath": "C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj",
+        "projectPath": "C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\SpaceRocks3D_EEModuleRules.csproj",
         "packagesPath": "C:\\Users\\Entit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Intermediate\\Build\\BuildRulesProjects\\SpaceRocks3D_EEModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

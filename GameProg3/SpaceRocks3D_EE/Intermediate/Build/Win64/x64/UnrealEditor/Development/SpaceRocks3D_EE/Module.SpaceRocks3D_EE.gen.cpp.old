@@ -2,4 +2,5 @@
 #include "C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Intermediate/Build/Win64/UnrealEditor/Inc/SpaceRocks3D_EE/UHT/AEESpaceShip.gen.cpp"
 #include "C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Intermediate/Build/Win64/UnrealEditor/Inc/SpaceRocks3D_EE/UHT/EEProjectile.gen.cpp"
 #include "C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Intermediate/Build/Win64/UnrealEditor/Inc/SpaceRocks3D_EE/UHT/EERock.gen.cpp"
+#include "C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Intermediate/Build/Win64/UnrealEditor/Inc/SpaceRocks3D_EE/UHT/EERockSpawner.gen.cpp"
 #include "C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Intermediate/Build/Win64/UnrealEditor/Inc/SpaceRocks3D_EE/UHT/SpaceRocks3D_EE.init.gen.cpp"

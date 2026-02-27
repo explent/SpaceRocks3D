@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceRocks3D_EE_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xADA9C9CA,
-				0xE49232F6,
+				0x2F7E493F,
+				0xFD25C3F8,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpaceRocks3D_EE(Z_Construct_UPackage__Script_SpaceRocks3D_EE, TEXT("/Script/SpaceRocks3D_EE"), Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xADA9C9CA, 0xE49232F6));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpaceRocks3D_EE(Z_Construct_UPackage__Script_SpaceRocks3D_EE, TEXT("/Script/SpaceRocks3D_EE"), Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x2F7E493F, 0xFD25C3F8));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

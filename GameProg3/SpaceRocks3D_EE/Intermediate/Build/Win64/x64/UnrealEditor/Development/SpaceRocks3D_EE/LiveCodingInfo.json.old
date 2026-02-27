@@ -5,6 +5,7 @@
 			"AEESpaceShip.gen.cpp.obj",
 			"EEProjectile.gen.cpp.obj",
 			"EERock.gen.cpp.obj",
+			"EERockSpawner.gen.cpp.obj",
 			"SpaceRocks3D_EE.init.gen.cpp.obj"
 		]
 	}

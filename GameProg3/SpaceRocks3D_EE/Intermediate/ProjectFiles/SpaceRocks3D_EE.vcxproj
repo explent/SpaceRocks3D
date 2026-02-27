@@ -261,6 +261,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\AEESpaceShip.h"/>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\EEGameMode.h"/>
     <None Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.Build.cs"/>
     <ClCompile Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

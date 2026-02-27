@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EE\\SpaceRocks3D_EE.Build.cs",
-		"C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EE.Target.cs",
-		"C:\\Users\\Entit\\Downloads\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EEEditor.Target.cs"
+		"C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EE\\SpaceRocks3D_EE.Build.cs",
+		"C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EE.Target.cs",
+		"C:\\Users\\Entit\\OneDrive\\Dokumente\\SpaceRocks3D\\GameProg3\\SpaceRocks3D_EE\\Source\\SpaceRocks3D_EEEditor.Target.cs"
 	],
 	"EngineVersion": "5.6.1"
 }

@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AEERockSpawner ***********************************************************
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_AEERockSpawner_NoRegister();
 
-#define FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEERockSpawner(); \
 	friend struct Z_Construct_UClass_AEERockSpawner_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AEERockSpawner)
 
 
-#define FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AEERockSpawner(AEERockSpawner&&) = delete; \
 	AEERockSpawner(const AEERockSpawner&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AEERockSpawner();
 
 
-#define FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_10_PROLOG
-#define FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_GENERATED_BODY \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_10_PROLOG
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AEERockSpawner;
 // ********** End Class AEERockSpawner *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Entit_Downloads_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h
+#define CURRENT_FILE_ID FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERockSpawner_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
