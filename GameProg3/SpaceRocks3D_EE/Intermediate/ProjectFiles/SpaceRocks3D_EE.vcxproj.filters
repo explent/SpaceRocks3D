@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SpaceRocks3D_EE.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SpaceRocks3D_EE.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SpaceRocks3D_EEEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SpaceRocks3D_EE">
+      <UniqueIdentifier>{6426DC8F-D08D-33A4-A226-F4E3E0B03E5E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\AEESpaceShip.cpp">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\AEESpaceShip.h">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.Build.cs">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.cpp">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.h">
+      <Filter>Source\SpaceRocks3D_EE</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceRocks3D_EE\Projectiles">
+      <UniqueIdentifier>{CBF37AD4-31BE-3D6F-9F80-13AC866D9A35}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\Projectiles\EEProjectile.cpp">
+      <Filter>Source\SpaceRocks3D_EE\Projectiles</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\Projectiles\EEProjectile.h">
+      <Filter>Source\SpaceRocks3D_EE\Projectiles</Filter>
+    </ClInclude>
+    <Filter Include="Source\SpaceRocks3D_EE\Props">
+      <UniqueIdentifier>{F36C28D0-1491-354B-AD28-8510AA863801}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\Props\EERock.cpp">
+      <Filter>Source\SpaceRocks3D_EE\Props</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\Props\EERock.h">
+      <Filter>Source\SpaceRocks3D_EE\Props</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\Props\EERockSpawner.cpp">
+      <Filter>Source\SpaceRocks3D_EE\Props</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\Props\EERockSpawner.h">
+      <Filter>Source\SpaceRocks3D_EE\Props</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

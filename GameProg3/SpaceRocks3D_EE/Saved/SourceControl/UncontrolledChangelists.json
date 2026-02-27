@@ -1,0 +1,26 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Maps/SpaceRocks3D_L1.umap",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/BP_SpaceShip.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Textures/spaceship_texture_0.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Textures/spaceship_texture_1.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Textures/spaceship_texture_2.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Textures/spaceship_texture_3.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/Materials/Material_003.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/Fab/SpaceShip/spaceship/StaticMeshes/spaceship.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Projectiles/BP_ProjectileDefault.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Damage/BP_DamageDefault.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D_Assets/Content/SpaceRocks3D_Assets/FX/Niagara/MW_Projectile_Tracer.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Props/BP_Rock.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Props/BP_RockSpawner.uasset",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D_Assets/Content/Empty.umap",
+				"C:/Users/Entit/Downloads/GameProg3/SpaceRocks3D_EE/Content/SpaceRocks3D/Projectiles/BP_Projectile.uasset"
+			]
+		}
+	]
+}

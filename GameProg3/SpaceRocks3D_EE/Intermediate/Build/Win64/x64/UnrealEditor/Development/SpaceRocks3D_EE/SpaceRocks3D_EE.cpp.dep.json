@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\entit\\downloads\\gameprog3\\spacerocks3d_ee\\source\\spacerocks3d_ee\\spacerocks3d_ee.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\entit\\downloads\\gameprog3\\spacerocks3d_ee\\intermediate\\build\\win64\\x64\\spacerocks3d_eeeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\entit\\downloads\\gameprog3\\spacerocks3d_ee\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spacerocks3d_ee\\definitions.spacerocks3d_ee.h",
+            "c:\\users\\entit\\downloads\\gameprog3\\spacerocks3d_ee\\source\\spacerocks3d_ee\\spacerocks3d_ee.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

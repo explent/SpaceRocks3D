@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SpaceRocks3D_EE",
+			"Path": "..\\Source\\SpaceRocks3D_EE.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SpaceRocks3D_EEEditor",
+			"Path": "..\\Source\\SpaceRocks3D_EEEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
