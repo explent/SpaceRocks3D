@@ -14,4 +14,14 @@ class SPACEROCKS3D_EE_API UEEPlayerOverlay : public UUserWidget
 {
 	GENERATED_BODY()
 	
+protected:
+
+	UPROPERTY(meta = (BindWidget)) TObjectPtr<class UProgressBar> HealthBar;
+
+	UPROPERTY(meta = (BindWidget)) TObjectPtr<class UTextBlock> HealthText;
+
+
+public:
+
+	void UpdateHealthBar(float Health, float MaxHealth);
 };

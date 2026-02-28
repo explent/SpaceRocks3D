@@ -44,7 +44,7 @@ AAEESpaceShip::AAEESpaceShip()
 	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("Audio Component"));
 	AudioComponent->SetSound(ThrusterLoopSound);
 
-	AutoPossessPlayer = EAutoReceiveInput::Player0;
+	//AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
 
 // Called when the game starts or when spawned
@@ -52,6 +52,15 @@ void AAEESpaceShip::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Health = MaxHealth;
+
+	PlayerController = Cast<AEEPlayerController>(GetController());
+
+	if (PlayerController) 
+	{
+		PlayerController->SetHUDHealth(Health, MaxHealth);
+	}
+
 }
 
 // Called every frame
@@ -281,6 +290,9 @@ void AAEESpaceShip::OnFireGun2Pressed() {
 
 float AAEESpaceShip::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
 	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	Health -= (ActualDamage * DamageMultiplier);
+	PlayerController->SetHUDHealth(Health, MaxHealth);
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Damage Applied: %f"), ActualDamage));
 

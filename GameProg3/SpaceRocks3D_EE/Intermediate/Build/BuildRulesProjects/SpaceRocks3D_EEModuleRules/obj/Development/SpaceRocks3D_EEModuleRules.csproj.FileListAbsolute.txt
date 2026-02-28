@@ -1,0 +1,6 @@
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.csproj.AssemblyReference.cache
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.AssemblyInfoInputs.cache
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.AssemblyInfo.cs
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.csproj.CoreCompileInputs.cache
+C:\Users\Entit\OneDrive\Dokumente\SpaceRocks3D\GameProg3\SpaceRocks3D_EE\Intermediate\Build\BuildRulesProjects\SpaceRocks3D_EEModuleRules\obj\Development\SpaceRocks3D_EEModuleRules.sourcelink.json

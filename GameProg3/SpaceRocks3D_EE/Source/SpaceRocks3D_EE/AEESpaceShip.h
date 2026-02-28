@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "NiagaraComponent.h"
+#include "EEPlayerController.h"
 #include "Components/AudioComponent.h"
 #include "AEESpaceShip.generated.h"
 
@@ -66,6 +67,10 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Movement") TObjectPtr<USoundBase> ThrusterLoopSound;
 
 	UPROPERTY(EditAnywhere, Category = "Player Stats") float MaxHealth = 100.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Player Stats") float DamageMultiplier = 0.1f;
+
+	TObjectPtr<AEEPlayerController> PlayerController;
 
 	UPROPERTY(EditAnywhere) TObjectPtr<UNiagaraSystem> ThrusterParticle;
 

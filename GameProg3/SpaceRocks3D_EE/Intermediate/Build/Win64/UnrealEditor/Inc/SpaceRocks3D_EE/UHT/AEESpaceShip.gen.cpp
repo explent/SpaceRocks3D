@@ -168,6 +168,10 @@ struct Z_Construct_UClass_AAEESpaceShip_Statics
 		{ "Category", "Player Stats" },
 		{ "ModuleRelativePath", "AEESpaceShip.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageMultiplier_MetaData[] = {
+		{ "Category", "Player Stats" },
+		{ "ModuleRelativePath", "AEESpaceShip.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ThrusterParticle_MetaData[] = {
 		{ "Category", "AEESpaceShip" },
 		{ "ModuleRelativePath", "AEESpaceShip.h" },
@@ -196,6 +200,7 @@ struct Z_Construct_UClass_AAEESpaceShip_Statics
 	static const UECodeGen_Private::FNamePropertyParams NewProp_LRMuzzleSocketName;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ThrusterLoopSound;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DamageMultiplier;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ThrusterParticle;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -223,6 +228,7 @@ const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAEESpaceShip_St
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_LRMuzzleSocketName = { "LRMuzzleSocketName", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, LRMuzzleSocketName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LRMuzzleSocketName_MetaData), NewProp_LRMuzzleSocketName_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_ThrusterLoopSound = { "ThrusterLoopSound", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, ThrusterLoopSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ThrusterLoopSound_MetaData), NewProp_ThrusterLoopSound_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_DamageMultiplier = { "DamageMultiplier", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, DamageMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageMultiplier_MetaData), NewProp_DamageMultiplier_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_ThrusterParticle = { "ThrusterParticle", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, ThrusterParticle), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ThrusterParticle_MetaData), NewProp_ThrusterParticle_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x01240800000a0009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEESpaceShip, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AudioComponent_MetaData), NewProp_AudioComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAEESpaceShip_Statics::PropPointers[] = {
@@ -244,6 +250,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAEESpace
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_LRMuzzleSocketName,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_ThrusterLoopSound,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_MaxHealth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_DamageMultiplier,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_ThrusterParticle,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEESpaceShip_Statics::NewProp_AudioComponent,
 };
@@ -284,10 +291,10 @@ AAEESpaceShip::~AAEESpaceShip() {}
 struct Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h__Script_SpaceRocks3D_EE_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAEESpaceShip, AAEESpaceShip::StaticClass, TEXT("AAEESpaceShip"), &Z_Registration_Info_UClass_AAEESpaceShip, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEESpaceShip), 3622323094U) },
+		{ Z_Construct_UClass_AAEESpaceShip, AAEESpaceShip::StaticClass, TEXT("AAEESpaceShip"), &Z_Registration_Info_UClass_AAEESpaceShip, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEESpaceShip), 3469574419U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h__Script_SpaceRocks3D_EE_1264208135(TEXT("/Script/SpaceRocks3D_EE"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h__Script_SpaceRocks3D_EE_409910904(TEXT("/Script/SpaceRocks3D_EE"),
 	Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h__Script_SpaceRocks3D_EE_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h__Script_SpaceRocks3D_EE_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
