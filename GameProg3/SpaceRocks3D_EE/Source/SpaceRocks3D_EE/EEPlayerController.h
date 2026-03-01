@@ -18,9 +18,13 @@ class SPACEROCKS3D_EE_API AEEPlayerController : public APlayerController
 public:
 
 	void SetHUDHealth(float Health, float MaxHealth);
+	void LoseLife();
 
 private: 
 	TObjectPtr<AEEHUD> TheHud;
+	UPROPERTY(EditAnywhere, Category = "Player Stats") int MaxLives = 3;
+	int Lives = 0;
+
 
 protected:
 	virtual void BeginPlay() override;

@@ -6,14 +6,17 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "HUD/EEPlayerOverlay.h"
+#include "Styling/SlateBrush.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 void EmptyLinkFunctionForGeneratedCodeEEPlayerOverlay() {}
 
 // ********** Begin Cross Module References ********************************************************
+SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FSlateBrush();
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_UEEPlayerOverlay();
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_UEEPlayerOverlay_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UHorizontalBox_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
@@ -73,9 +76,20 @@ struct Z_Construct_UClass_UEEPlayerOverlay_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "HUD/EEPlayerOverlay.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LivesContainer_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HUD/EEPlayerOverlay.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LifeIconBrush_MetaData[] = {
+		{ "Category", "Lives" },
+		{ "ModuleRelativePath", "HUD/EEPlayerOverlay.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HealthBar;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HealthText;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_LivesContainer;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_LifeIconBrush;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -85,9 +99,13 @@ struct Z_Construct_UClass_UEEPlayerOverlay_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_HealthBar = { "HealthBar", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEEPlayerOverlay, HealthBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HealthBar_MetaData), NewProp_HealthBar_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_HealthText = { "HealthText", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEEPlayerOverlay, HealthText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HealthText_MetaData), NewProp_HealthText_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_LivesContainer = { "LivesContainer", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEEPlayerOverlay, LivesContainer), Z_Construct_UClass_UHorizontalBox_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LivesContainer_MetaData), NewProp_LivesContainer_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_LifeIconBrush = { "LifeIconBrush", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEEPlayerOverlay, LifeIconBrush), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LifeIconBrush_MetaData), NewProp_LifeIconBrush_MetaData) }; // 963227394
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEEPlayerOverlay_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_HealthBar,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_HealthText,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_LivesContainer,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEEPlayerOverlay_Statics::NewProp_LifeIconBrush,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UEEPlayerOverlay_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UEEPlayerOverlay_Statics::DependentSingletons[])() = {
@@ -127,10 +145,10 @@ UEEPlayerOverlay::~UEEPlayerOverlay() {}
 struct Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_HUD_EEPlayerOverlay_h__Script_SpaceRocks3D_EE_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEEPlayerOverlay, UEEPlayerOverlay::StaticClass, TEXT("UEEPlayerOverlay"), &Z_Registration_Info_UClass_UEEPlayerOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEEPlayerOverlay), 2928255921U) },
+		{ Z_Construct_UClass_UEEPlayerOverlay, UEEPlayerOverlay::StaticClass, TEXT("UEEPlayerOverlay"), &Z_Registration_Info_UClass_UEEPlayerOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEEPlayerOverlay), 4224301733U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_HUD_EEPlayerOverlay_h__Script_SpaceRocks3D_EE_1365656964(TEXT("/Script/SpaceRocks3D_EE"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_HUD_EEPlayerOverlay_h__Script_SpaceRocks3D_EE_1440712941(TEXT("/Script/SpaceRocks3D_EE"),
 	Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_HUD_EEPlayerOverlay_h__Script_SpaceRocks3D_EE_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_HUD_EEPlayerOverlay_h__Script_SpaceRocks3D_EE_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

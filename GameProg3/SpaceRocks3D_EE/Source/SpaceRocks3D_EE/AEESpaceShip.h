@@ -85,6 +85,8 @@ public:
 
 	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	
+	float GetMaxHealth() const;
+	void SetHealth(float NewHealth);
 
 	void SetInputEnabled(bool bIsEnabled);
 

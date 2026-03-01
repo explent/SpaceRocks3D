@@ -17,7 +17,7 @@ public class SpaceRocks3D_EE : ModuleRules
         // This line tells the compiler to treat the root of this module as a valid include path.
         // It allows #include "Projectiles/Projectile.h" to work correctly.
         // Uncomment if you are using Slate UI
-        // PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
+         PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 
         // Uncomment if you are using online features
         // PrivateDependencyModuleNames.Add("OnlineSubsystem");

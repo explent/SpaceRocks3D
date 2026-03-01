@@ -62,13 +62,24 @@ struct Z_Construct_UClass_AEEPlayerController_Statics
 		{ "IncludePath", "EEPlayerController.h" },
 		{ "ModuleRelativePath", "EEPlayerController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxLives_MetaData[] = {
+		{ "Category", "Player Stats" },
+		{ "ModuleRelativePath", "EEPlayerController.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxLives;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEEPlayerController>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AEEPlayerController_Statics::NewProp_MaxLives = { "MaxLives", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEEPlayerController, MaxLives), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxLives_MetaData), NewProp_MaxLives_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEEPlayerController_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEEPlayerController_Statics::NewProp_MaxLives,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AEEPlayerController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AEEPlayerController_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_APlayerController,
 	(UObject* (*)())Z_Construct_UPackage__Script_SpaceRocks3D_EE,
@@ -80,11 +91,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AEEPlayerController_Sta
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_AEEPlayerController_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AEEPlayerController_Statics::PropPointers),
 	0,
 	0x009003A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEEPlayerController_Statics::Class_MetaDataParams), Z_Construct_UClass_AEEPlayerController_Statics::Class_MetaDataParams)
@@ -106,10 +117,10 @@ AEEPlayerController::~AEEPlayerController() {}
 struct Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_EEPlayerController_h__Script_SpaceRocks3D_EE_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AEEPlayerController, AEEPlayerController::StaticClass, TEXT("AEEPlayerController"), &Z_Registration_Info_UClass_AEEPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEEPlayerController), 3872486314U) },
+		{ Z_Construct_UClass_AEEPlayerController, AEEPlayerController::StaticClass, TEXT("AEEPlayerController"), &Z_Registration_Info_UClass_AEEPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEEPlayerController), 1130598039U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_EEPlayerController_h__Script_SpaceRocks3D_EE_3800692231(TEXT("/Script/SpaceRocks3D_EE"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_EEPlayerController_h__Script_SpaceRocks3D_EE_1085633490(TEXT("/Script/SpaceRocks3D_EE"),
 	Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_EEPlayerController_h__Script_SpaceRocks3D_EE_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_EEPlayerController_h__Script_SpaceRocks3D_EE_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

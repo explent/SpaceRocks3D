@@ -296,5 +296,17 @@ float AAEESpaceShip::TakeDamage(float DamageAmount, FDamageEvent const& DamageEv
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Damage Applied: %f"), ActualDamage));
 
+	if (Health <= 0) {
+		PlayerController->LoseLife();
+	}
+
 	return ActualDamage;
 }
+
+float AAEESpaceShip::GetMaxHealth() const {
+	return MaxHealth;
+}
+
+void AAEESpaceShip::SetHealth(float NewHealth) {
+	Health = NewHealth;
+} 

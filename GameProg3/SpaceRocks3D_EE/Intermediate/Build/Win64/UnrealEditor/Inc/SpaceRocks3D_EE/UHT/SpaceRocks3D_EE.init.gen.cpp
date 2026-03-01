@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceRocks3D_EE_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x83E3D808,
+				0xA2346857,
 				0x70B9AFA4,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeSpaceRocks3D_EE_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpaceRocks3D_EE(Z_Construct_UPackage__Script_SpaceRocks3D_EE, TEXT("/Script/SpaceRocks3D_EE"), Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x83E3D808, 0x70B9AFA4));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SpaceRocks3D_EE(Z_Construct_UPackage__Script_SpaceRocks3D_EE, TEXT("/Script/SpaceRocks3D_EE"), Z_Registration_Info_UPackage__Script_SpaceRocks3D_EE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA2346857, 0x70B9AFA4));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -20,8 +20,12 @@ protected:
 
 	UPROPERTY(meta = (BindWidget)) TObjectPtr<class UTextBlock> HealthText;
 
+	UPROPERTY(meta = (BindWidget)) TObjectPtr<class UHorizontalBox> LivesContainer;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Lives") FSlateBrush LifeIconBrush;
 
 public:
 
 	void UpdateHealthBar(float Health, float MaxHealth);
+	void UpdateLivesDisplay(int NumLives);
 };
