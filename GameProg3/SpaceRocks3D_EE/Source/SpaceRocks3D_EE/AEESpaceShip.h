@@ -88,6 +88,10 @@ public:
 	float GetMaxHealth() const;
 	void SetHealth(float NewHealth);
 
+	void DisableOnDeath();
+	void EnableOnRegen();
+	void Regenerate();
+
 	void SetInputEnabled(bool bIsEnabled);
 
 private:

@@ -310,3 +310,25 @@ float AAEESpaceShip::GetMaxHealth() const {
 void AAEESpaceShip::SetHealth(float NewHealth) {
 	Health = NewHealth;
 } 
+
+void AAEESpaceShip::DisableOnDeath() {
+	StaticMesh->SetVisibility(false);
+	SetActorEnableCollision(false);
+	SetInputEnabled(false);
+	PlayerController->SetHUDHealth(0, MaxHealth);
+}
+
+void AAEESpaceShip::EnableOnRegen() {
+	Health = MaxHealth;
+	StaticMesh->SetVisibility(true);
+	SetActorEnableCollision(true);
+	SetInputEnabled(true);
+	PlayerController->SetHUDHealth(Health, MaxHealth);
+}
+
+void AAEESpaceShip::Regenerate() {
+	DisableOnDeath();
+
+	FTimerHandle UnusedHandle;
+	GetWorldTimerManager().SetTimer(UnusedHandle, this, &AAEESpaceShip::EnableOnRegen, 2.0f, false);
+}

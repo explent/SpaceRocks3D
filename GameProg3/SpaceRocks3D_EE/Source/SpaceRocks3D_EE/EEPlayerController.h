@@ -19,6 +19,8 @@ public:
 
 	void SetHUDHealth(float Health, float MaxHealth);
 	void LoseLife();
+	void SetHUDLives(int NumLives);
+
 
 private: 
 	TObjectPtr<AEEHUD> TheHud;
