@@ -57,6 +57,15 @@
     <ClInclude Include="..\..\Source\SpaceRocks3D_EE\SpaceRocks3D_EE.h">
       <Filter>Source\SpaceRocks3D_EE</Filter>
     </ClInclude>
+    <Filter Include="Source\SpaceRocks3D_EE\Attributes">
+      <UniqueIdentifier>{A92FCB20-68C3-3AC0-8310-6B8B37B58651}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpaceRocks3D_EE\Attributes\EEAttributeComponent.cpp">
+      <Filter>Source\SpaceRocks3D_EE\Attributes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceRocks3D_EE\Attributes\EEAttributeComponent.h">
+      <Filter>Source\SpaceRocks3D_EE\Attributes</Filter>
+    </ClInclude>
     <Filter Include="Source\SpaceRocks3D_EE\HUD">
       <UniqueIdentifier>{E4BA16CB-FF5A-3556-A751-54EE49087DAB}</UniqueIdentifier>
     </Filter>

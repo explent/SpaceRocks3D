@@ -3,6 +3,7 @@
 	{
 		"Module.SpaceRocks3D_EE.gen.cpp.obj": [
 			"AEESpaceShip.gen.cpp.obj",
+			"EEAttributeComponent.gen.cpp.obj",
 			"EEGameMode.gen.cpp.obj",
 			"EEHUD.gen.cpp.obj",
 			"EEPlayerController.gen.cpp.obj",

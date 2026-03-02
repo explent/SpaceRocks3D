@@ -16,10 +16,18 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class AAEESpaceShip ************************************************************
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnHit);
+
+
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_AAEESpaceShip_NoRegister();
 
-#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAEESpaceShip(); \
 	friend struct Z_Construct_UClass_AAEESpaceShip_Statics; \
@@ -30,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(AAEESpaceShip)
 
 
-#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AAEESpaceShip(AAEESpaceShip&&) = delete; \
 	AAEESpaceShip(const AAEESpaceShip&) = delete; \
@@ -40,12 +48,13 @@ public: \
 	NO_API virtual ~AAEESpaceShip();
 
 
-#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_18_PROLOG
-#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_21_GENERATED_BODY \
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_19_PROLOG
+#define FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_AEESpaceShip_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

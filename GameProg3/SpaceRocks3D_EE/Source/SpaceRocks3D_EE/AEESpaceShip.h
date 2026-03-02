@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Attributes/EEAttributeComponent.h"
 #include "NiagaraComponent.h"
 #include "EEPlayerController.h"
 #include "Components/AudioComponent.h"
@@ -40,6 +41,8 @@ protected:
 	//Static mesh
 	UPROPERTY(VisibleAnywhere) TObjectPtr<UStaticMeshComponent> StaticMesh;
 
+	UPROPERTY(EditAnywhere) TObjectPtr<UEEAttributeComponent> AttributeComponent;
+
 	UPROPERTY(EditAnywhere, Category = "Movement") float MaxSpeed = 3000.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Movement") float ThrustStrength = 750.0f;
@@ -66,15 +69,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Movement") TObjectPtr<USoundBase> ThrusterLoopSound;
 
-	UPROPERTY(EditAnywhere, Category = "Player Stats") float MaxHealth = 100.0f;
-
-	UPROPERTY(EditAnywhere, Category = "Player Stats") float DamageMultiplier = 0.1f;
-
-	TObjectPtr<AEEPlayerController> PlayerController;
+//	UPROPERTY(EditAnywhere, Category = "Player Stats") float DamageMultiplier = 0.1f;
 
 	UPROPERTY(EditAnywhere) TObjectPtr<UNiagaraSystem> ThrusterParticle;
-
 	UPROPERTY(VisibleAnywhere) TObjectPtr<UAudioComponent> AudioComponent;
+	UFUNCTION() void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+	UPROPERTY(EditDefaultsOnly, Category = "Damage") TSubclassOf<UDamageType> DamageTypeClass;
 
 public:	
 	// Called every frame
@@ -84,9 +84,8 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
-	
-	float GetMaxHealth() const;
-	void SetHealth(float NewHealth);
+
+	virtual void PostInitializeComponents() override;
 
 	void DisableOnDeath();
 	void EnableOnRegen();
@@ -97,7 +96,6 @@ public:
 private:
 	FVector Velocity = FVector(0.0f, 0.0f, 0.0f);
 	FVector Acceleration = FVector(0.0f, 0.0f, 0.0f);
-	float Health = 0.0f;
 	float CurrentRoll;
 	float CurrentPitch;
 	FString SpeedText;

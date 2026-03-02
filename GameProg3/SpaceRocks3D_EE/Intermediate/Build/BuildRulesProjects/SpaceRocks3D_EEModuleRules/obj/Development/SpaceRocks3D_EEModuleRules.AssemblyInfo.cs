@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpaceRocks3D_EEModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebc55606098aaae4bc94c2dc14616078e4296129")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8592b32d1025a02e14585fcf374633b7c964d53")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpaceRocks3D_EEModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpaceRocks3D_EEModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

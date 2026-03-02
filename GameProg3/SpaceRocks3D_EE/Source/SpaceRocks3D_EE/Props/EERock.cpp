@@ -19,6 +19,8 @@ AEERock::AEERock()
 	StaticMesh->SetEnableGravity(false);
 	StaticMesh->SetAllMassScale(0.1f);
 	StaticMesh->SetNotifyRigidBodyCollision(true);
+
+	AttributeComponent = CreateDefaultSubobject<UEEAttributeComponent>(TEXT("Health Attribute Component"));
 }
 
 // Called when the game starts or when spawned
@@ -68,16 +70,24 @@ void AEERock::Tick(float DeltaTime)
 void AEERock::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
 
 	if (OtherActor->ActorHasTag("Projectile")) {
-		Destroy();
+		if (AttributeComponent->GetHealth() <= 0) {
+			Destroy();
+		}
 	}
 	if (OtherActor->ActorHasTag("SpaceShip")) {
-		
+
+		float TotalDamage = 0.0f;
+		if (AttributeComponent) {
+			TotalDamage = AttributeComponent->GetCollisionStrength();
+		}
+
 		FVector HitDirection = GetActorRotation().Vector();
 
-		const float RockMass = HitComp->GetMass();
-		const float ScaledDamage = BaseDamage + (RockMass * MassMultiplier);
+		UGameplayStatics::ApplyPointDamage(OtherActor, TotalDamage, HitDirection, Hit, GetInstigatorController(), this, DamageTypeClass);
 
-		UGameplayStatics::ApplyPointDamage(OtherActor, ScaledDamage, HitDirection, Hit, GetInstigatorController(), this, DamageTypeClass);
+		if (AttributeComponent && AttributeComponent->GetHealth() <= 0) {
+			Destroy();
+		}
 
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Damage Applied"));
 	}
@@ -88,4 +98,16 @@ void AEERock::PostInitializeComponents() {
 	Super::PostInitializeComponents();
 	//Bind the OnHit Method to the OnComponentHit
 	StaticMesh->OnComponentHit.AddDynamic(this, &AEERock::OnHit);
+}
+
+float AEERock::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	//float FinalMultiplier = DamageMultiplier * SizeMultipler; (Create a DamageMultiplier if you want further tuning!)
+
+	if (AttributeComponent) {
+		AttributeComponent->UpdateHealth(-ActualDamage);
+	}
+
+	return ActualDamage;
 }

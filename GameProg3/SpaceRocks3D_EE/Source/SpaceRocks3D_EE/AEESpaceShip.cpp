@@ -44,23 +44,13 @@ AAEESpaceShip::AAEESpaceShip()
 	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("Audio Component"));
 	AudioComponent->SetSound(ThrusterLoopSound);
 
-	//AutoPossessPlayer = EAutoReceiveInput::Player0;
+	AttributeComponent = CreateDefaultSubobject<UEEAttributeComponent>(TEXT("Health Attribute Component"));
 }
 
 // Called when the game starts or when spawned
 void AAEESpaceShip::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	Health = MaxHealth;
-
-	PlayerController = Cast<AEEPlayerController>(GetController());
-
-	if (PlayerController) 
-	{
-		PlayerController->SetHUDHealth(Health, MaxHealth);
-	}
-
 }
 
 // Called every frame
@@ -291,39 +281,23 @@ void AAEESpaceShip::OnFireGun2Pressed() {
 float AAEESpaceShip::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
 	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
-	Health -= (ActualDamage * DamageMultiplier);
-	PlayerController->SetHUDHealth(Health, MaxHealth);
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Damage Applied: %f"), ActualDamage));
-
-	if (Health <= 0) {
-		PlayerController->LoseLife();
-	}
+	AttributeComponent->UpdateHealth(-ActualDamage);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Damage Applied: %f"), ActualDamage));
 
 	return ActualDamage;
 }
-
-float AAEESpaceShip::GetMaxHealth() const {
-	return MaxHealth;
-}
-
-void AAEESpaceShip::SetHealth(float NewHealth) {
-	Health = NewHealth;
-} 
 
 void AAEESpaceShip::DisableOnDeath() {
 	StaticMesh->SetVisibility(false);
 	SetActorEnableCollision(false);
 	SetInputEnabled(false);
-	PlayerController->SetHUDHealth(0, MaxHealth);
 }
 
 void AAEESpaceShip::EnableOnRegen() {
-	Health = MaxHealth;
+	AttributeComponent->UpdateHealth(AttributeComponent->GetMaxHealth());
 	StaticMesh->SetVisibility(true);
 	SetActorEnableCollision(true);
 	SetInputEnabled(true);
-	PlayerController->SetHUDHealth(Health, MaxHealth);
 }
 
 void AAEESpaceShip::Regenerate() {
@@ -331,4 +305,22 @@ void AAEESpaceShip::Regenerate() {
 
 	FTimerHandle UnusedHandle;
 	GetWorldTimerManager().SetTimer(UnusedHandle, this, &AAEESpaceShip::EnableOnRegen, 2.0f, false);
+}
+
+void AAEESpaceShip::PostInitializeComponents() {
+	Super::PostInitializeComponents();
+
+	StaticMesh->OnComponentHit.AddDynamic(this, &AAEESpaceShip::OnHit);
+}
+
+void AAEESpaceShip::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
+
+	float TotalDamage = 0.0f;
+	if (AttributeComponent) {
+		TotalDamage = AttributeComponent->GetCollisionStrength();
+	}
+
+	FVector HitDirection = GetActorRotation().Vector();
+
+	UGameplayStatics::ApplyPointDamage(OtherActor, TotalDamage, HitDirection, Hit, GetInstigatorController(), this, DamageTypeClass);
 }

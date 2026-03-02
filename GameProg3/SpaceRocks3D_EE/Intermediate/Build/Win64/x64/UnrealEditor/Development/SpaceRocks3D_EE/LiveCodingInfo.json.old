@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SpaceRocks3D_EE.gen.cpp.obj": [
+			"AEESpaceShip.gen.cpp.obj",
+			"EEGameMode.gen.cpp.obj",
+			"EEHUD.gen.cpp.obj",
+			"EEPlayerController.gen.cpp.obj",
+			"EEPlayerOverlay.gen.cpp.obj",
+			"EEProjectile.gen.cpp.obj",
+			"EERock.gen.cpp.obj",
+			"EERockSpawner.gen.cpp.obj",
+			"SpaceRocks3D_EE.init.gen.cpp.obj"
+		]
+	}
+}

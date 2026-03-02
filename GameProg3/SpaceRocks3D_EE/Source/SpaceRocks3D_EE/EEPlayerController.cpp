@@ -13,10 +13,7 @@ void AEEPlayerController::BeginPlay() {
 }
 
 void AEEPlayerController::SetHUDHealth(float Health, float MaxHealth) {
-
-	if (TheHud == nullptr) {
-		TheHud = Cast<AEEHUD>(GetHUD());
-	}
+	InitHUD();
 
 	if (TheHud && TheHud->PlayerOverlay) {
 		TheHud->PlayerOverlay->UpdateHealthBar(Health, MaxHealth);
@@ -40,11 +37,31 @@ void AEEPlayerController::LoseLife() {
 }
 
 void AEEPlayerController::SetHUDLives(int NumLives) {
-	if (TheHud == nullptr) {
-		TheHud = Cast<AEEHUD>(GetHUD());
-	}
+	InitHUD();
 
 	if (TheHud && TheHud->PlayerOverlay) {
 		TheHud->PlayerOverlay->UpdateLivesDisplay(NumLives);
 	}
 }
+
+void AEEPlayerController::OnPossess(APawn* InPawn){
+
+	Super::OnPossess(InPawn);
+
+	UEEAttributeComponent* AttributeComp = InPawn->FindComponentByClass<UEEAttributeComponent>();
+
+	if (AttributeComp) {
+		AttributeComp->OnHealthChanged.AddDynamic(this, &AEEPlayerController::SetHUDHealth);
+		AttributeComp->OnDeath.AddDynamic(this, &AEEPlayerController::LoseLife);
+	}
+
+}
+
+void AEEPlayerController::InitHUD() {
+	if (TheHud == nullptr) {
+		TheHud = Cast<AEEHUD>(GetHUD());
+	}
+}
+
+
+//create HUD speed and score methods for speed and score

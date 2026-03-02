@@ -25,6 +25,7 @@ ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_AEERock();
 SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_AEERock_NoRegister();
+SPACEROCKS3D_EE_API UClass* Z_Construct_UClass_UEEAttributeComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_SpaceRocks3D_EE();
 // ********** End Cross Module References **********************************************************
 
@@ -169,12 +170,9 @@ struct Z_Construct_UClass_AEERock_Statics
 		{ "Category", "Damage" },
 		{ "ModuleRelativePath", "Props/EERock.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BaseDamage_MetaData[] = {
-		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "Props/EERock.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MassMultiplier_MetaData[] = {
-		{ "Category", "Damage" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributeComponent_MetaData[] = {
+		{ "Category", "EERock" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Props/EERock.h" },
 	};
 #endif // WITH_METADATA
@@ -185,8 +183,7 @@ struct Z_Construct_UClass_AEERock_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RandomSpeedRange;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RandomAngleRange;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DamageTypeClass;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_BaseDamage;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_MassMultiplier;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttributeComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -205,8 +202,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEERock_Static
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_RandomSpeedRange = { "RandomSpeedRange", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, RandomSpeedRange), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RandomSpeedRange_MetaData), NewProp_RandomSpeedRange_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_RandomAngleRange = { "RandomAngleRange", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, RandomAngleRange), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RandomAngleRange_MetaData), NewProp_RandomAngleRange_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_DamageTypeClass = { "DamageTypeClass", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, DamageTypeClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageTypeClass_MetaData), NewProp_DamageTypeClass_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_BaseDamage = { "BaseDamage", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, BaseDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseDamage_MetaData), NewProp_BaseDamage_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_MassMultiplier = { "MassMultiplier", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, MassMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MassMultiplier_MetaData), NewProp_MassMultiplier_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEERock_Statics::NewProp_AttributeComponent = { "AttributeComponent", nullptr, (EPropertyFlags)0x0124080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEERock, AttributeComponent), Z_Construct_UClass_UEEAttributeComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeComponent_MetaData), NewProp_AttributeComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEERock_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_StaticMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_RockMeshes_Inner,
@@ -215,8 +211,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEERock_S
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_RandomSpeedRange,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_RandomAngleRange,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_DamageTypeClass,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_BaseDamage,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_MassMultiplier,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEERock_Statics::NewProp_AttributeComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AEERock_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AEERock_Statics::DependentSingletons[])() = {
@@ -255,10 +250,10 @@ AEERock::~AEERock() {}
 struct Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERock_h__Script_SpaceRocks3D_EE_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AEERock, AEERock::StaticClass, TEXT("AEERock"), &Z_Registration_Info_UClass_AEERock, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEERock), 7585144U) },
+		{ Z_Construct_UClass_AEERock, AEERock::StaticClass, TEXT("AEERock"), &Z_Registration_Info_UClass_AEERock, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEERock), 131992707U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERock_h__Script_SpaceRocks3D_EE_1083261756(TEXT("/Script/SpaceRocks3D_EE"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERock_h__Script_SpaceRocks3D_EE_3111788697(TEXT("/Script/SpaceRocks3D_EE"),
 	Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERock_h__Script_SpaceRocks3D_EE_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Entit_OneDrive_Dokumente_SpaceRocks3D_GameProg3_SpaceRocks3D_EE_Source_SpaceRocks3D_EE_Props_EERock_h__Script_SpaceRocks3D_EE_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

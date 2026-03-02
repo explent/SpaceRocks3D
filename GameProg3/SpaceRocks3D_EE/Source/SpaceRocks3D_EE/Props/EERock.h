@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Attributes/EEAttributeComponent.h"
 #include "EERock.generated.h"
 
 class UStaticMesh;
@@ -28,15 +29,16 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Rock Properties") FVector2D RandomAngleRange = FVector2D(-45.0f, 45.0f);
 	UFUNCTION() void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 	UPROPERTY(EditDefaultsOnly, Category = "Damage") TSubclassOf<UDamageType> DamageTypeClass;
-
-	UPROPERTY(EditAnywhere, Category = "Damage") float BaseDamage = 10.0f;
-	UPROPERTY(EditAnywhere, Category = "Damage") float MassMultiplier = 0.1f;
+	UPROPERTY(EditAnywhere) TObjectPtr<UEEAttributeComponent> AttributeComponent;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void PostInitializeComponents() override;
+
+
+	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
 private:
 	FVector Velocity = FVector(0.0f, 0.0f, 0.0f);
